@@ -1,0 +1,90 @@
+<head>
+    <title>Favorites</title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript" src="js/favorites.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        <div id="navigation">
+            <header>
+                <h1>Favorites</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="favorites.html">Favorites</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="controls">
+            <header>
+                <h2>Controls</h2>
+            </header>
+            <section class="controls">
+                <header>
+                    <h3>New Favorites</h3>
+                </header>
+                <form action="javascript:createFavorite();" id="creator">
+
+                    <fieldset>
+                        <label>title</label>
+                        <div></div>
+                        <input id="creator-title" type="text" />
+                    </fieldset>
+                    <fieldset>
+                        <label>Description</label>
+                        <div>
+                            <textarea id="creator-description" rows="5">
+                            </textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>image</label>
+                        <input id="creator-media" type="text" />
+                    </fieldset>
+                    <fieldset>
+                        <button>Create</button>
+                    </fieldset>
+                </form>
+
+            </section>
+        </div>
+        <div id="content">
+            <header>
+                <h2>Favorites</h2>
+            </header>
+            <article class="favorites">
+                <header>
+                    <h3 class="Title">Wavyy!!!</h3>
+
+                </header>
+
+                <div class="media">
+                    <iframe src="//giphy.com/embed/3o7TKyjq6plu9K0Cnm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <p><a href="https://giphy.com/gifs/hairspraylive-nbc-hairspray-live-3o7TKyjq6plu9K0Cnm">via GIPHY</a></p>
+                </div>
+                <p class="description">
+                    He looks hilarious!
+
+                </p>
+            </article>
+            <header>
+                <h4 class="Title">Let's do the Funkyy!</h4>
+            </header>
+            <div class="media">
+                <iframe src="//giphy.com/embed/l2JhFwLyX3dCGN13G" width="480" height="309" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <p><a href="https://giphy.com/gifs/animation-dance-drunk-l2JhFwLyX3dCGN13G">via GIPHY</a></p>
+            </div>
+            <p class="description">
+                If you aren't doing the funky like i am, you ain't doing it right girl!
+            </p>
+        </div>
+    </div>
+</body>

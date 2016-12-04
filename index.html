@@ -1,0 +1,130 @@
+<head>
+    <script src="js/mailer.js" type="text/javascript"></script>
+    <style type="text/css">
+        body {
+            background-color: #FCE4EC;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        section {
+            max-width: 50ch;
+            border-left: 1px solid transparent;
+        }
+        
+        section:hover {
+            border-left: 1px solid red;
+        }
+        
+        .books {
+            color: #CE93D8;
+        }
+        
+        .movies {
+            color: #CE93D8;
+        }
+        
+        .foods {
+            color: #CE93D8;
+        }
+    </style>
+</head>
+
+<head>
+    <style type="text/css">
+        h2 {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body style="font-family: Helvetica">
+    <div id="navigation">
+            <header>
+                
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="favorites.html">Favorites</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <div>
+        <header>
+            <h1 style="color:#e4778a;font-size: xxxl;">About Me</h1>
+        </header>
+        <p style=color:#CE93D8>Want to know my favorite color?</p>
+        <p style="color:#E91E63">PINK!</p>
+        <section style="color:#CE93D8">
+            <header style=color:#EF5350>
+                <h2>Bio</h2>
+            </header>
+            <p>Luz is my first name but i like being called by my middle name, Ivonne. I was born in October 10, 1999 in Navarrete, Santo Domingo.</p>
+        </section>
+
+        <section>
+            <header>
+                <h2 style="color:#EF5350">Favorites</h2>
+            </header>
+            <p style="color:#CE93D8">These are some of my favorties things to do...</p>
+            <section class="books">
+
+                <header>
+                    <h3 style="color:#EF5350">Books</h3>
+                </header>
+                <ul class="books">
+
+                    <li>Just Friends</li>
+                    <li>Butter</li>
+                    <li>Pride and Prejudice</li>
+                    <li>Letters To The Men I Once Loved</li>
+
+
+                </ul>
+            </section>
+            <section class="movies">
+                <header>
+                    <h4 style="color:#EF5350">Movies</h4>
+                </header>
+                <ul class="movies">
+                    <li>The Notebook</li>
+                    <li>Ghostbusters</li>
+                    <li>Grease</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <header>
+                <h2 style="color:#EF5350">Least Favorites</h2>
+            </header>
+            <p style="color:#CE93D8">These are some of my least favorite things</p>
+            <section class="foods">
+                <header>
+                    <h3 style="color:#EF5350">Foods</h3>
+                </header>
+                <ul class="foods">
+                    <li>McDonalds</li>
+                    <li>Some Mexican foods</li>
+                    <li></li>
+
+                </ul>
+            </section>
+        </section>
+        <section>
+            <header>
+                <h2 style="color:#E040FB">Contact Me</h2>
+            </header>
+
+            <textarea rows="6" style="width:100%;background-color:#C5CAE9;" id="message">
+        </textarea>
+            <button onclick="mailer.send(document.getElementById('message').value)" style="color:#7C4DFF;background-color:#F8BBD0">All Done</button>
+        </section>
+    </div>
+</body>
